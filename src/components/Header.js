@@ -103,15 +103,15 @@ const Header = () => {
             </ul>
           </div>
         )}
-        <span class="material-symbols-outlined m-3  hover:bg-gray-200 rounded-full p-1">
+        <span className="material-symbols-outlined m-3  hover:bg-gray-200 rounded-full p-1">
           mic
         </span>
       </div>
       <div className="flex">
-        <span class="material-symbols-outlined font-thin m-4 hover:bg-gray-200 rounded-full p-1">
+        <span className="material-symbols-outlined font-thin m-4 hover:bg-gray-200 rounded-full p-1">
           auto_videocam
         </span>
-        <span class="material-symbols-outlined font-thin m-4  hover:bg-gray-200 rounded-full p-1">
+        <span className="material-symbols-outlined font-thin m-4  hover:bg-gray-200 rounded-full p-1">
           notifications
         </span>
         <img

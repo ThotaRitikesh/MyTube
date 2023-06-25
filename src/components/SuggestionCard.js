@@ -5,7 +5,6 @@ import cropTitle from "../helper/cropTitle";
 import uploadTime from "../helper/uploadTime";
 
 const SuggestionCard = ({ videos }) => {
-  console.log(videos);
   const dispatch = useDispatch();
   const title = videos?.snippet?.title;
   const maxLength = 40;
