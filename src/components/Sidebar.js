@@ -45,11 +45,11 @@ const Sidebar = () => {
           <span className="material-symbols-outlined p-1 font-thin">
             thumb_up
           </span>
-          <span className="p-1  text-sm">Liked</span>
+          <span className="p-1 mr-3 text-sm">Liked</span>
         </li>
         <li className="flex justify-center my-2 hover:bg-gray-100">
           <span className="material-symbols-outlined p-1  font-thin">pace</span>
-          <span className="p-1  text-sm">Watch.</span>
+          <span className="p-1 mr-3 text-sm">Watch</span>
         </li>
       </ul>
       <div className="border border-gray-100 my-4 "></div>
@@ -64,13 +64,13 @@ const Sidebar = () => {
           <span className="material-symbols-outlined p-1 font-thin">
             music_note
           </span>
-          <span className="p-1  text-sm">Music</span>
+          <span className="p-1 mr-5 text-sm">Music</span>
         </li>
         <li className="flex justify-center my-2 hover:bg-gray-100">
           <span className="material-symbols-outlined p-1 font-thin">
             settings
           </span>
-          <span className="p-1  text-sm">Settings</span>
+          <span className="p-1 mr-2 text-sm">Settings</span>
         </li>
       </ul>
     </div>
