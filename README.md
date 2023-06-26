@@ -1,6 +1,3 @@
-![Screenshot (512)](https://github.com/ThotaRitikesh/MyTube/assets/91207994/e3d2147c-8bfb-40cc-8624-8fe6aeb3a130)
-![Uploading Screenshot (511).png…]()
-![Uploading Screenshot (510).png…]()
 🚀 Introducing MyTube: The Ultimate YouTube Clone!\
 
 Developed using ReactJS, Redux, Tailwind CSS, React Router DOM, and YouTube APIs, MyTube is more than just a clone—it's a dynamic, highly scalable, and industry-level application.\
@@ -20,7 +17,11 @@ Source code: https://lnkd.in/gVgHpwx3\
 
 The codebase follows best practices to ensure maintainability and extensibility.\
 
-Note: Use Allow Cors Extension for Search Suggestions on your UI And it's Build Only for Web. 🙏\
-![Uploading Screenshot (509).png…]()
-![Uploading Screenshot (508).png…]()
+Note: Use Allow Cors Extension for Search Suggestions on your UI And it's Build Only for Desktop![Screenshot (512)](https://github.com/ThotaRitikesh/MyTube/assets/91207994/3113fc97-fcb3-435a-9afa-5e87b5fc3a1d)
+![Screenshot (511)](https://github.com/ThotaRitikesh/MyTube/assets/91207994/c12fbab1-be4a-4761-bba7-229d713cd6aa)
+![Screenshot (510)](https://github.com/ThotaRitikesh/MyTube/assets/91207994/f3621919-06e6-4d70-a7c6-a47a0cc9ebc3)
+![Screenshot (509)](https://github.com/ThotaRitikesh/MyTube/assets/91207994/f662ba8b-16f9-4b82-883d-716e0214a7a8)
+![Screenshot (508)](https://github.com/ThotaRitikesh/MyTube/assets/91207994/dea0a403-5ff1-491f-ad01-ae1ba4e424ea)
+. 🙏\
+
 
