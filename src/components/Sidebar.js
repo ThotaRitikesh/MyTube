@@ -6,7 +6,7 @@ const Sidebar = () => {
   const isMenuOpen = useSelector((state) => state.toggle_app.isMenuOpen);
 
   return isMenuOpen ? (
-    <div className="shadow-lg bg-fixed my-20 px-4">
+    <div className="shadow-lg bg-fixed my-20 px-4 ">
       <ul>
         <li className="flex justify-center my-2  hover:bg-gray-100">
           <Link to="/">

@@ -1,26 +1,28 @@
 import "./App.css";
 import Body from "./components/Body";
-import Header from "./components/Header";
 import MainContainer from "./components/MainContainer";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import WatchPage from "./components/WatchPage";
 import ErrorPage from "./components/ErrorPage";
+import SearchPage from "./components/SearchPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Body />,
-    errorElement:<ErrorPage/>,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: "/",
         element: <MainContainer />,
-        errorElement:<ErrorPage/>,
       },
       {
         path: "watch",
         element: <WatchPage />,
-        errorElement:<ErrorPage/>,
+      },
+      {
+        path: "/results",
+        element: <SearchPage />,
       },
     ],
   },
@@ -29,7 +31,6 @@ const router = createBrowserRouter([
 function App() {
   return (
     <div className="App">
-      <Header />
       <RouterProvider router={router} />
     </div>
   );

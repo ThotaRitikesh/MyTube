@@ -14,15 +14,17 @@ const RelatedSuggestions = () => {
     // eslint-disable-next-line
   }, [id]);
 
+
   const getRelatedVideos = async () => {
     const data = await fetch(RELATED_SEARCH + id);
     const json = await data.json();
+    console.log(json);
     setRelatedResults(json?.items);
   };
 
   return (
     <div className="my-5 p-2">
-      {relatedResults.map((video) => (
+      {relatedResults?.map((video) => (
         <Link
           to={"/watch?v=" + video?.id?.videoId}
           key={video?.id?.videoId}
