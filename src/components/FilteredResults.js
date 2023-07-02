@@ -6,10 +6,10 @@ import { useDispatch, useSelector } from "react-redux";
 import { addDetails } from "../utiles/videoInfo.js";
 import Shimmer from "./Shimmer.js";
 
-const SearchPage = () => {
+const FilteredResults = () => {
+  const { text } = useSelector((store) => store.filterText);
   const [videos, setVideos] = useState([]);
 
-  const { text } = useSelector((store) => store.details);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -22,7 +22,6 @@ const SearchPage = () => {
     const json = await data.json();
     setVideos(json?.items);
   };
-
   return videos.length === 0 ? (
     <Shimmer />
   ) : (
@@ -41,4 +40,4 @@ const SearchPage = () => {
   );
 };
 
-export default SearchPage;
+export default FilteredResults;

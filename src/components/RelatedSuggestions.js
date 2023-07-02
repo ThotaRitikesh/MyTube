@@ -18,7 +18,6 @@ const RelatedSuggestions = () => {
   const getRelatedVideos = async () => {
     const data = await fetch(RELATED_SEARCH + id);
     const json = await data.json();
-    console.log(json);
     setRelatedResults(json?.items);
   };
 

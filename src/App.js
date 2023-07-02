@@ -1,10 +1,11 @@
 import "./App.css";
 import Body from "./components/Body";
-import MainContainer from "./components/MainContainer";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import WatchPage from "./components/WatchPage";
 import ErrorPage from "./components/ErrorPage";
 import SearchPage from "./components/SearchPage";
+import FilteredResults from "./components/FilteredResults";
+import VideoContainer from "./components/VideoContainer";
 
 const router = createBrowserRouter([
   {
@@ -14,7 +15,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <MainContainer />,
+        element: <VideoContainer />,
       },
       {
         path: "watch",
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
       {
         path: "/results",
         element: <SearchPage />,
+      },
+      {
+        path: "/filter",
+        element: <FilteredResults />,
       },
     ],
   },

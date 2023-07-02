@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
-import { useDispatch } from "react-redux";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { closetoggle } from "../utiles/appToggle";
 import RelatedSuggestions from "./RelatedSuggestions";
 import { COMMENTS_API, SEARCH_BY_ID } from "../utiles/constant";
@@ -45,13 +44,15 @@ const WatchPage = () => {
   };
 
   return (
-    <div className="flex my-14">
+    <div className="flex">
       <div className="m-2 p-3 mx-24 my-5 w-[600px]">
         <iframe
           width="600"
           height="300"
           autoFocus
-          src={"https://www.youtube.com/embed/" + movieId+"?autoplay=1&mute=1"}
+          src={
+            "https://www.youtube.com/embed/" + movieId + "?autoplay=1&mute=1"
+          }
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen

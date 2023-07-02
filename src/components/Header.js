@@ -53,7 +53,7 @@ const Header = () => {
         </Link>
       </div>
       <div className=" flex">
-        <div className="w-[500px] border border-gray-200 rounded-l-full p-2 my-2 shadow-sm h-10  border-r-0 flex">
+        <div className="w-[500px] border border-gray-200 rounded-l-full p-2 my-2 shadow-md h-10  border-r-0 flex">
           <input
             type="text"
             className="w-[500px] outline-0 px-3"
@@ -77,7 +77,7 @@ const Header = () => {
           <Link to={"/results?search_query=" + searchQuery}>
             <button
               type="submit"
-              className="border border-gray-300 rounded-r-full my-2  p-2 bg-gray-100 w-14 h-10 shadow-sm"
+              className="border border-gray-300 rounded-r-full my-2  p-2 bg-gray-100 w-14 h-10 shadow-md "
             >
               <span
                 className="material-symbols-outlined font-light"
@@ -120,13 +120,15 @@ const Header = () => {
           mic
         </span>
       </div>
-      <div className="flex">
+      <div className="flex ">
+        <div>
         <span className="material-symbols-outlined font-thin m-4 hover:bg-gray-200 rounded-full p-1">
           auto_videocam
         </span>
         <span className="material-symbols-outlined font-thin m-4  hover:bg-gray-200 rounded-full p-1">
           notifications
         </span>
+        </div>
         <img
           alt="user logo font-thin "
           src={img}

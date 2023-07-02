@@ -1,29 +1,22 @@
 import React from "react";
+import { useDispatch } from "react-redux";
+import { Link } from "react-router-dom";
+import { searchFilter } from "../utiles/filterSlice";
 
-const list = [
-  "All",
-  "Music",
-  "Love Songs",
-  "Cricket",
-  "Live",
-  "Sports",
-  "Gaming",
-  "Computer Science",
-  "Trailers",
-  "New  to you",
-];
-
-const ButtonList = () => {
+const ButtonList = ({list}) => {
+  const dispatch=useDispatch();
   return (
-    <div className="mt-16 mx-4">
-      {list.map((list, index) => (
+    <div className=" mx-4 flex flex-wrap justify-center ml-4 h-12">   
+      {list.map((list) => (
+        <Link to={"/filter?s="+list} key={list}>
         <button
-          key={index}
-          className="bg-gray-100 px-4 m-1 w-auto h-9 rounded-xl"
+          className="bg-gray-100 px-4 m-1 w-auto h-9 rounded-xl focus:bg-black focus:text-white"
+          onClick={()=>dispatch(searchFilter(list))}
         >
           {list}
         </button>
-      ))}
+        </Link>
+      ))}     
     </div>
   );
 };
