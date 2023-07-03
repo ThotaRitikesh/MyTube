@@ -1,11 +1,14 @@
 import "./App.css";
 import Body from "./components/Body";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import WatchPage from "./components/WatchPage";
 import ErrorPage from "./components/ErrorPage";
-import SearchPage from "./components/SearchPage";
-import FilteredResults from "./components/FilteredResults";
 import VideoContainer from "./components/VideoContainer";
+import { lazy, Suspense} from "react";
+
+const WatchPage = lazy(() => import("./components/WatchPage"));
+const SearchPage = lazy(() => import("./components/SearchPage"));
+const FilteredResults = lazy(() => import("./components/FilteredResults"));
+const ShortsPage = lazy(() => import("./components/ShortsPage"));
 
 const router = createBrowserRouter([
   {
@@ -19,23 +22,44 @@ const router = createBrowserRouter([
       },
       {
         path: "watch",
-        element: <WatchPage />,
+        element: (
+          <Suspense>
+            <WatchPage />
+          </Suspense>
+        ),
       },
       {
         path: "/results",
-        element: <SearchPage />,
+        element: (
+          <Suspense>
+            <SearchPage />
+          </Suspense>
+        ),
       },
       {
         path: "/filter",
-        element: <FilteredResults />,
+        element: (
+          <Suspense>
+            <FilteredResults />
+          </Suspense>
+        ),
+      },
+      {
+        path: "/shorts",
+        element: (
+          <Suspense>
+            <ShortsPage />
+          </Suspense>
+        ),
       },
     ],
   },
 ]);
 
 function App() {
+
   return (
-    <div className="App">
+    <div className="App dark:bg-black dark:text-gray-300">
       <RouterProvider router={router} />
     </div>
   );

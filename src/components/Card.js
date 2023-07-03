@@ -15,13 +15,13 @@ const Card = ({ videos }) => {
   const timeSincePublished = uploadTime(publishedAt);
 
   return (
-    <div className="p-1 mx-1 my-2 shadow-sm w-[360px]">
+    <div className="p-1 mx-1 my-2 shadow-sm w-[360px] dark:shadow-slate-600">
       <img
         alt="thumbnail"
         src={videos?.snippet?.thumbnails?.medium?.url}
         className="rounded-xl w-[360px] hover:rounded-none"
       />
-      <h1 className="font-bold my-2">{croppedTitle}</h1>
+      <h1 className="font-bold mt-2">{croppedTitle}</h1>
       <h3>{videos?.snippet?.channelTitle}</h3>
       <div className="flex justify-start">
         <h5 className="mr-2">{formattedViewCount} Views.</h5>

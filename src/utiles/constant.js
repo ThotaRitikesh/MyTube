@@ -1,4 +1,4 @@
-const API_KEY = "AIzaSyAsSPdtlV6eqRbXWsmr6cNlpxdiC--WQuM";
+export const API_KEY = "AIzaSyB5HaqANI-8yzUjyYkWk_1puQeUOgRinnM";
 
 export const YT_API_LINK =
   " https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=50&regionCode=IN&key=" +
@@ -13,7 +13,7 @@ export const SEARCH_BY_ID =
   "&id=";
 
 export const RELATED_SEARCH =
-  "https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=15&type=video&key=" +
+  "https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=3&type=video&key=" +
   API_KEY +
   "&relatedToVideoId=";
 

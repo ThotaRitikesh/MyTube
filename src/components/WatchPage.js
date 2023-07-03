@@ -44,7 +44,7 @@ const WatchPage = () => {
   };
 
   return (
-    <div className="flex">
+    <div className="flex flex-col justify-center lg:flex lg:flex-row md:flex md:flex-row">
       <div className="m-2 p-3 mx-24 my-5 w-[600px]">
         <iframe
           width="600"
@@ -54,13 +54,12 @@ const WatchPage = () => {
             "https://www.youtube.com/embed/" + movieId + "?autoplay=1&mute=1"
           }
           title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen
         ></iframe>
         <h1 className="font-bold text-xl py-2 ">{videoInfo?.title}</h1>
         <div
           className={
-            " bg-gray-100 shadow-lg rounded-2xl" +
+            " bg-gray-100 shadow-lg rounded-2xl  dark:bg-gray-800" +
             (showDescription ? " h-auto " : " h-28 overflow-hidden ")
           }
         >
