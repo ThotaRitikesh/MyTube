@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { closetoggle } from "../utiles/appToggle";
+import { closetoggle } from "../store/reducers/appToggle";
 import RelatedSuggestions from "./RelatedSuggestions";
-import { COMMENTS_API, SEARCH_BY_ID } from "../utiles/constant";
+import { COMMENTS_API, SEARCH_BY_ID } from "../helper/constant";
 import CommentsCard from "./CommentsCard";
-import { addDetails } from "../utiles/videoInfo";
+import { addDetails } from "../store/reducers/videoInfo";
+
 
 const WatchPage = () => {
   const [searchParams] = useSearchParams();
@@ -44,14 +45,14 @@ const WatchPage = () => {
   };
 
   return (
-    <div className="flex flex-col justify-center lg:flex lg:flex-row md:flex md:flex-row">
+    <div className=" flex justify-center">
       <div className="m-2 p-3 mx-24 my-5 w-[600px]">
         <iframe
           width="600"
           height="300"
           autoFocus
           src={
-            "https://www.youtube.com/embed/" + movieId + "?autoplay=1&mute=1"
+            "https://www.youtube.com/embed/" + movieId + "?autoplay=1&mute=1&rel=0&loop=1"
           }
           title="YouTube video player"
           allowFullScreen

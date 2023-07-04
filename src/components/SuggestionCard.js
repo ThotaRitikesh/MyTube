@@ -1,5 +1,5 @@
 import React from "react";
-import { addDetails } from "../utiles/videoInfo";
+import { addDetails } from "../store/reducers/videoInfo";
 import { useDispatch } from "react-redux";
 import cropTitle from "../helper/cropTitle";
 import uploadTime from "../helper/uploadTime";

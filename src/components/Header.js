@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import Hamburger from "../assets/hamburger.png";
 import { useDispatch, useSelector } from "react-redux";
-import { toggle } from "../utiles/appToggle";
-import { YT_SUGGESTIONS } from "../utiles/constant";
-import { cacheResults } from "../utiles/searchSlice";
-import { searchText } from "../utiles/videoInfo";
+import { toggle } from "../store/reducers/appToggle";
+import { YT_SUGGESTIONS } from "../helper/constant";
+import { cacheResults } from "../store/reducers/searchSlice";
+import { searchText } from "../store/reducers/videoInfo";
 import img from "../assets/IMG-1955.jpg";
 import { Link } from "react-router-dom";
 import Switcher from "./Switcher";
@@ -54,7 +54,7 @@ const Header = () => {
           onClick={() => dispatch(toggle())}
         />
         <Link to="/">
-          <img alt="yt-logo" src={mytube} className="h-6 m-5" />
+          <img alt="yt-logo" src={mytube} className="h-6 m-5 " />
         </Link>
       </div>
       <div className=" flex">

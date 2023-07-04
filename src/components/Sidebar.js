@@ -53,21 +53,6 @@ const Sidebar = () => {
           <span className="material-symbols-outlined p-1  font-thin">pace</span>
           <span className="p-1 mr-3 text-sm">Watch</span>
         </li>
-      </ul>
-      <div className="border border-gray-100 my-4 "></div>
-      <ul className="overflow-hidden">
-        <li className="flex justify-center my-2 hover:bg-gray-100  dark:hover:bg-gray-800">
-          <span className="material-symbols-outlined p-1 font-thin">
-            local_fire_department
-          </span>
-          <span className="p-1  text-sm">Trending</span>
-        </li>
-        <li className="flex justify-center my-2 hover:bg-gray-100  dark:hover:bg-gray-800">
-          <span className="material-symbols-outlined p-1 font-thin">
-            music_note
-          </span>
-          <span className="p-1 mr-5 text-sm">Music</span>
-        </li>
         <li className="flex justify-center my-2 hover:bg-gray-100  dark:hover:bg-gray-800">
           <span className="material-symbols-outlined p-1 font-thin">
             settings
@@ -75,6 +60,7 @@ const Sidebar = () => {
           <span className="p-1 mr-2 text-sm">Settings</span>
         </li>
       </ul>
+      <div className="border border-gray-100 my-4 "></div>
     </div>
   ) : null;
 };

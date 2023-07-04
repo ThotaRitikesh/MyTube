@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { YT_API_LINK } from "../utiles/constant.js";
+import { YT_API_LINK } from "../helper/constant.js";
 import Card from "./Card.js";
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { addDetails } from "../utiles/videoInfo.js";
+import { addDetails } from "../store/reducers/videoInfo.js";
 import Shimmer from "./Shimmer.js";
 
 const VideoContainer = () => {

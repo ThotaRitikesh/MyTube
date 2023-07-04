@@ -1,7 +1,7 @@
 export const API_KEY = "AIzaSyB5HaqANI-8yzUjyYkWk_1puQeUOgRinnM";
 
 export const YT_API_LINK =
-  " https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=50&regionCode=IN&key=" +
+  " https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=45&regionCode=IN&key=" +
   API_KEY;
 
 export const YT_SUGGESTIONS =
@@ -13,7 +13,7 @@ export const SEARCH_BY_ID =
   "&id=";
 
 export const RELATED_SEARCH =
-  "https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=3&type=video&key=" +
+  "https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=17&type=video&key=" +
   API_KEY +
   "&relatedToVideoId=";
 
@@ -26,3 +26,7 @@ export const SEARCH_TEXT_API =
   "https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=25&type=video&key=" +
   API_KEY +
   "&q=";
+
+  export const SHORTS_API="https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=5&type=video&videoDuration=short&key=" +
+  API_KEY +
+  "&q=trendingshorts";

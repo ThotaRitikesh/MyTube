@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { SEARCH_TEXT_API } from "../utiles/constant.js";
+import { SEARCH_TEXT_API } from "../helper/constant";
 import Card from "./Card.js";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { addDetails } from "../utiles/videoInfo.js";
+import { addDetails } from "../store/reducers/videoInfo.js";
 import Shimmer from "./Shimmer.js";
 
 const SearchPage = () => {

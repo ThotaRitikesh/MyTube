@@ -1,7 +1,7 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
-import { searchFilter } from "../utiles/filterSlice";
+import { searchFilter } from "../store/reducers/filterSlice";
 
 const ButtonList = ({ list }) => {
   const dispatch = useDispatch();

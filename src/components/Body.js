@@ -11,7 +11,7 @@ const Body = () => {
     "T-series",
     "akshay saini",
     "Music",
-    "Love Songs",
+    "Trending",
     "Cricket",
     "Live",
     "Sports",

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { API_KEY } from "../utiles/constant";
 import ShortsShimmer from "./ShortsShimmer";
+import { SHORTS_API } from "../helper/constant";
 
 const ShortsPage = () => {
   const [shorts, setShorts] = useState([]);
@@ -10,11 +10,7 @@ const ShortsPage = () => {
   }, []);
 
   const fetchShorts = async () => {
-    const data = await fetch(
-      "https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=5&type=video&key=" +
-        API_KEY +
-        "&q=shorts"
-    );
+    const data = await fetch(SHORTS_API);
     const json = await data.json();
     setShorts(json.items);
   };
@@ -34,7 +30,7 @@ const ShortsPage = () => {
               src={
                 "https://www.youtube.com/embed/" +
                 s?.id?.videoId +
-                "?autoplay=0&mute=1"
+                "?autoplay=0&mute=1&rel=0"
               }
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
