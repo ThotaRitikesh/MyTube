@@ -4,7 +4,7 @@ const number=[1,2,3,4,5,6,7,8,9];
 
 const Shimmer = () => {
   return (
-    <div className="p-1 mx-24 my-5 shadow-sm  flex flex-wrap ">
+    <div className="p-1 mx-14 my-5 shadow-sm  flex flex-wrap ">
       {number
         .map((e) => (
           <div
