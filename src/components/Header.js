@@ -70,7 +70,7 @@ const Header = () => {
           />
           {searchQuery !== "" && (
             <span
-              className="material-symbols-outlined cursor-pointer hover:bg-gray-200 rounded-full"
+              className="material-symbols-outlined cursor-pointer hover:bg-gray-200 rounded-full  dark:hover:bg-gray-700"
               onClick={() => setSearchQuery("")}
             >
               close

@@ -15,7 +15,7 @@ const Card = ({ videos }) => {
   const timeSincePublished = uploadTime(publishedAt);
 
   return (
-    <div className="p-1 mx-1 my-2 shadow-sm w-[360px] dark:shadow-slate-600">
+    <div className="p-1 mx-1 my-2 shadow-sm w-[360px] dark:shadow-slate-700 dark:rounded-b-lg">
       <img
         alt="thumbnail"
         src={videos?.snippet?.thumbnails?.medium?.url}
