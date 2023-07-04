@@ -27,10 +27,10 @@ const VideoContainer = () => {
     <div className="flex flex-wrap justify-center ">
       {videos?.map((video) => (
         <Link
-          to={"/watch?v=" + video.id}
-          onClick={() => dispatch(addDetails(video.id))}
-          key={video.id}
-          value={video.id}
+          to={"/watch?v=" + video?.id}
+          onClick={() => dispatch(addDetails(video?.id))}
+          key={video?.id}
+          value={video?.id}
         >
           <Card videos={video} />
         </Link>

@@ -15,7 +15,7 @@ const SuggestionCard = ({ videos }) => {
   return (
     <div
       className="p-2 m-2 flex w-auto "
-      onClick={() => dispatch(addDetails(videos.id.videoId))}
+      onClick={() => dispatch(addDetails(videos?.id?.videoId))}
     >
       <img
         alt="thumbnail"

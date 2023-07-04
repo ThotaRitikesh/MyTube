@@ -28,10 +28,10 @@ const FilteredResults = () => {
     <div className="flex flex-wrap justify-center ">
       {videos?.map((video) => (
         <Link
-          to={"/watch?v=" + video.id.videoId}
-          onClick={() => dispatch(addDetails(video.id.videoId))}
-          key={video.id.videoId}
-          value={video.id.videoId}
+          to={"/watch?v=" + video?.id?.videoId}
+          onClick={() => dispatch(addDetails(video?.id?.videoId))}
+          key={video?.id?.videoId}
+          value={video?.id?.videoId}
         >
           <Card videos={video} />
         </Link>
