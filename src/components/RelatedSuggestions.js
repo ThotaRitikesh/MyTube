@@ -3,6 +3,7 @@ import { RELATED_SEARCH } from "../helper/constant";
 import { Link } from "react-router-dom";
 import SuggestionCard from "./SuggestionCard";
 import { useSelector } from "react-redux";
+import { YT_API_LINK } from "../helper/constant.js";
 
 const RelatedSuggestions = () => {
   const { id } = useSelector((store) => store.details);
@@ -15,8 +16,16 @@ const RelatedSuggestions = () => {
   }, [id]);
 
 
+  // const getRelatedVideos = async () => {
+  //   const data = await fetch(RELATED_SEARCH + id);
+  //   const json = await data.json();
+  //   setRelatedResults(json?.items);
+  // };
+
+  //getRelatedVideos from videoId got deprecated.
+  //Loading with home screen Data.
   const getRelatedVideos = async () => {
-    const data = await fetch(RELATED_SEARCH + id);
+    const data = await fetch(YT_API_LINK);
     const json = await data.json();
     setRelatedResults(json?.items);
   };
@@ -25,8 +34,8 @@ const RelatedSuggestions = () => {
     <div className="my-5 p-2">
       {relatedResults?.map((video) => (
         <Link
-          to={"/watch?v=" + video?.id?.videoId}
-          key={video?.id?.videoId}
+          to={"/watch?v=" + video?.id}
+          key={video?.id}
           value={video?.id}
         >
           <SuggestionCard videos={video} />
