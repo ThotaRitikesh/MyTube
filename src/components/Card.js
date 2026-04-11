@@ -1,4 +1,3 @@
-import React from "react";
 import cropTitle from "../helper/cropTitle";
 import formatViewCount from "../helper/formatViewCount";
 import uploadTime from "../helper/uploadTime";

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { SEARCH_TEXT_API } from "../helper/constant";
 import Card from "./Card.js";
 import { Link } from "react-router-dom";

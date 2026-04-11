@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from "react";
-import { RELATED_SEARCH } from "../helper/constant";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import SuggestionCard from "./SuggestionCard";
 import { useSelector } from "react-redux";
